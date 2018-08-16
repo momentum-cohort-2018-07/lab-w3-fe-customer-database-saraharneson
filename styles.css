@@ -9,24 +9,37 @@
 
 }
 
+
+
 .customer {
     display: inline-block;
-    width: 24%;
+    width: 23%;
     vertical-align: top;
     text-align: center;
-    margin: 5px;
+    margin: 10px 1px;
+    padding: 1px 3px;
+    /* line-height: -0.5rem; */
+    /* overflow-wrap: break-word; */
+    overflow: hidden
+    /* word-wrap: break-word; */
 }
 
-.customer h1 {
-    font-size: 75rem;
+.customer h4 {
+    font-size: .75rem;
     letter-spacing: -5px;
+    /* color: lightgray; */
 }
 
+
+.customer p {
+    margin: 0;
+    padding-bottom: 1;
+}
 
 .customer h2 {
     letter-spacing: -.5px;
 }
 
-.emailContact p {
-    color: 'light gray';
+.emailContact {
+    color: gainsboro;
 }

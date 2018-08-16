@@ -95,13 +95,14 @@ class Customer {
 
 
     getAddress() {
-        return capsEachWord(this.info.location.street + `\n` + capsEachWord(this.info.location.city) + ", " + capsEachWord(this.info.location.state) + " " + this.info.location.postcode)
+        return capsEachWord(this.info.location.street) + '\n' + capsEachWord(this.info.location.city) + ", " + capsEachWord(this.info.location.state) + " " + this.info.location.postcode
     }
+
+    // figure out how to use commented out state abbreviation hash ^^^
 
     getDates() {
-        return "DOB: " + moment(this.info.dob).format('MMM Do, YYYY') + '\n' + moment(this.info.registered).format('MMM Do, YYYY')
+        return "DOB: " + moment(this.info.dob).format('MMM D, YYYY') + '\n' + "Customer since: " + moment(this.info.registered).format('MMM D, YYYY')
     }
-
 
     generateDOM() {
         let div = document.createElement('div')
@@ -116,7 +117,7 @@ class Customer {
         nameH2.innerText = this.getName()
 
         let emailP = document.createElement('p')
-        div.classList.add('emailContact')
+        // div.classList.add('emailContact')
         emailP.innerText = this.getEmail()
 
         let addressP = document.createElement('p')
