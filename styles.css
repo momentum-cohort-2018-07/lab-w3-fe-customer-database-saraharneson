@@ -4,12 +4,9 @@
     margin: 0 auto;
 }
 
-#output img {
-    border-radius: 50%;
-
-}
-
-
+/* #output img {
+    border-radius: 25% 50%;
+} */
 
 .customer {
     display: inline-block;
@@ -24,22 +21,49 @@
     /* word-wrap: break-word; */
 }
 
-.customer h4 {
+/* .customer h4 {
     font-size: .75rem;
     letter-spacing: -5px;
     /* color: lightgray; */
-}
+/* } */ 
 
 
-.customer p {
+.customerPhoto {
     margin: 0;
-    padding-bottom: 1;
+    border-radius: 25% 50%;
+
+    /* border-radius: 50%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%; */
+
+
+    /* padding-bottom: 1; */
+    margin-bottom: -8px;
+
 }
 
-.customer h2 {
+.customerName {
     letter-spacing: -.5px;
+    margin-bottom: -5px;
 }
 
 .emailContact {
-    color: gainsboro;
+    color: gray;
+    font-size: .85rem;
+    line-height: 1rem;
+    margin-bottom: -5px;
+
+}
+
+.customerAddress {
+    font-size: .9rem;
+    line-height: 1rem;    margin-bottom: -5px;
+
+}
+
+.customerDates {
+    font-size: .9rem;
+    line-height: 1rem;
+
+
 }

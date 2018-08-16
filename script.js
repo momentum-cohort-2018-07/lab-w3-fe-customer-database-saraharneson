@@ -10,6 +10,11 @@ function capsEachWord (str) {
     return str.join(' ')
 }
 
+// function stateAbbreviation () {
+//     let stateAbbrev = 
+
+// }
+
 // states_hash =
 //   {
 //     'Alabama': 'AL',
@@ -88,11 +93,9 @@ class Customer {
             titleCase(this.info.name.last)
     }
 
-
     getEmail() {
         return this.info.email
     }
-
 
     getAddress() {
         return capsEachWord(this.info.location.street) + '\n' + capsEachWord(this.info.location.city) + ", " + capsEachWord(this.info.location.state) + " " + this.info.location.postcode
@@ -109,21 +112,23 @@ class Customer {
         div.classList.add('customer')
 
         let headshotImg = document.createElement('img')
-        div.classList.add('customerPhoto')
+        headshotImg.classList.add('customerPhoto')
         headshotImg.src = this.info.picture.large
 
         let nameH2 = document.createElement('h2')
-        div.classList.add('customerName')
+        nameH2.classList.add('customerName')
         nameH2.innerText = this.getName()
 
         let emailP = document.createElement('p')
-        // div.classList.add('emailContact')
+        emailP.classList.add('emailContact')
         emailP.innerText = this.getEmail()
 
         let addressP = document.createElement('p')
+        addressP.classList.add('customerAddress')
         addressP.innerText = this.getAddress()
 
         let datesP = document.createElement('p')
+        datesP.classList.add('customerDates')
         datesP.innerText = this.getDates()
     
 
