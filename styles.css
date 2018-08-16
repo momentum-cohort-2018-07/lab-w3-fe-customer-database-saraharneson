@@ -1,25 +1,32 @@
-
 #output {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    width: 100$&
-
-
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    width: 100%;
+    margin: 0 auto;
 }
 
+#output img {
+    border-radius: 50%;
+
+}
 
 .customer {
     display: inline-block;
+    width: 24%;
+    vertical-align: top;
+    text-align: center;
+    margin: 5px;
+}
+
+.customer h1 {
+    font-size: 75rem;
+    letter-spacing: -5px;
 }
 
 
-
-.customer-photo {
-    border-radius: 50%;
+.customer h2 {
+    letter-spacing: -.5px;
 }
 
-.customer-name {
-
-
-
+.emailContact p {
+    color: 'light gray';
 }
-
